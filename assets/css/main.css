@@ -5055,29 +5055,43 @@ a img {
         width: 48%
     }
 
-    .contents,
-    .contents-right {
-        margin-top: -5%
-    }
+    .user-projects {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px; /* Adjust spacing between projects */
+}
 
-    .contents-right,
-    .images-right {
-        float: right;
-        width: 48%
-    }
+.contents-left,
+.contents-right {
+  flex: 1;
+}
 
-    .images-right img {
-        float: right
-    }
+.images-left,
+.images-right {
+  flex: 1;
+}
 
-    .images-left {
-        float: left;
-        width: 48%
-    }
+.images-left img,
+.images-right img {
+  max-width: 100%;
+  height: auto;
+}
 
-    .images-left img {
-        float: left
-    }
+.contents-right {
+  margin-top: -5%;
+}
+
+.images-right,
+.contents-right {
+  float: right;
+  width: 48%;
+}
+
+.images-left,
+.contents-left {
+  float: left;
+  width: 48%;
+}
 }
 
 .project-link {
